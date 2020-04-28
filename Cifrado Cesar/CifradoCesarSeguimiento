@@ -1,0 +1,25 @@
+//EJERCICIO 3A Y CONCLUSIONES
+
+EJERCICIO 3.A
+N	   O	 F	 U	E	 I	  N   D	  E	  S	  C	  I	 F	 R	  A  B	 L  E
+13	15	 5	21	4	 8	 13	  3	  4	 19	  2	  8	 5	18	  0	 1	11	4
+
+P	  E	   R	 O	C	 A    S	  I	  P	  E	  R	  O	 C	 A	  S	 I	 P	E
+16	4	  18	15	2	 0	 19	  8	 16	  4	 18	 15	 2	 0	 19	 8	16	4
+
+SUMANDO LAS POCISIONES DE LA PALABRA Y LA CLAVE % TAMAÑO DEL ALFABETO
+29	19	23	36	6	 8	 32	 11	 20	 23	 20	 23	 7	18	 19	 9	27	8
+ C	S	   W	 J	G	 I	  F	  L	  T	  W	  T	  W	 H   R	  S	 J	 A	I   ---> palabra cifrada
+
+ CONCLUSIONES:
+
+a. Cuáles son las debilidades y fortalezas del cifrado de Cesar (cifrado monoalfabético)
+   debilidades:
+   el cifrado monoalfabetico es muy simple al momento de cifrado ya que con un analisis del mensaje
+   cifrado se observa una frencuencia entre las letras , haciendo que este cifrado sea
+   facil de desencriptar.
+b. Cuáles son las debilidades y fortalezas del cifrado de Vigenere (cifrado polialfabético)
+   fortalezas:
+   el cifrado polialfabetico no es tan simple como el monoalfabetico ya que se usa por lo menos 1 sub-criptograma(clave)
+   al momento de cifrado , esto hace que las frencuencias de las letras en el mensaje cifrado no sea notorio por lo tanto
+   el mensaje sea mas dificil de desencriptar.
