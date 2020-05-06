@@ -96,28 +96,33 @@ void vigenere::inicializar(){
     cin>>op;
     if(op==1){
         a=cifrando(palabra,clav);
-        cout<<"\nPalabra Cifrada: "<<a;
+        cout<<"\nPalabra Cifrada: \n"<<a<<"\n";
+        
     }
     else if(op==2){
         b=descifrar(palabra,clav);
-        cout<<"\nPalabra Descifrada: "<<b;
+        cout<<"\nPalabra Descifrada: \n"<<b<<"\n";
+        
     }
     else if(op==3){
         c=cifrar_ascii(palabra,clav);
-        cout<<"\nPalabra Cifrada en ASCII: "<<c;
-    }
-    else if(op==4){
+        cout<<"\nPalabra Cifrada en ASCII: \n"<<c<<"\n";  
+       
+    } 
+    else if(op==4){ 
         d=descifrar_ascii(palabra,clav);
-        cout<<"\nPalabra descifrada en ASCII: "<<d;
+        cout<<"\nPalabra descifrada en ASCII: \n"<<d<<"\n";
+        
 
     }
     else if(op==5){
         e=cifrado_concatenando(palabra,clav);
-        cout<<"\nPalabra cifrada concatenando: "<<e;
+        cout<<"\nPalabra cifrada concatenando: \n"<<e<<"\n";
+        
     }
     else{
-        cout<<"ESTA OPCION NO EXISTE INGRESE OTRA";
-        inicializar();
+        cout<<"ESTA OPCION NO EXISTE INGRESE OTRA \n";
+        
     }
 }
 
@@ -224,16 +229,26 @@ int main(){
   string em,re;
   string palabra="-s-iDMmsEGGuzyQKvCdpOMTsuz M6ziD1iNhdi7vcmuhQtv vLTyxuuKwTT AGRuthmorv5Zi4Bim858gizeQDwvrKEFzKQt-BdmLS7sAjlG3jjZf5ZY3vlnWvt sJGtuCYSoFLxERXgzRVrAzoA99cZi4K4odfi8ljpIRqnL ,n7nREABT KC8IqykY4h1Fi0L";
   string clave="Sebastian Augusto Paz Rocha 191-10-45515";
+  
+  //LOS STRING PALABRA Y CLAVE SON SOBRE EL PROBLEMA DE DESCIFRAR A UN COMPAÑERO USANDO SU MENSAJE ENCRIPTADO
+  //Y SU CLAVE ES EL NOMBRE COMPLETO , SE PUEDE PROBRAR DESCOMENTANDO LAS LINEAS DE ABAJO MENOS EL INICIALIZAR 
+  //QUE ABRE UN MENU OPCIONAL
+  
+  
   //em=a.cifrando(palabra,clave);
   //cout<<em;
   //cout<<"\n\n";
-  cout<<"MENSAJE A CIFRAR: \n";
-  cout<<palabra<<"\n\n";
-  cout<<"MENSAJE DESCIFRADO: \n";
-  re=a.descifrar(palabra,clave);
-  cout<<re<<"\n\n";
-  //a.inicializar();
-
+  //cout<<"MENSAJE A CIFRAR: \n";
+  //cout<<palabra<<"\n\n";
+  //cout<<"MENSAJE DESCIFRADO: \n";  
+  //re=a.descifrar(palabra,clave);
+  //cout<<re<<"\n\n";
+  
+  
+  a.inicializar();    //FUNCION QUE ABRE EL MENU PARA PODER REALIZAR LA FUNCION QUE EL USUARIO DESEE CIFRAR , DESCIFRAR ,
+                      //CIFRAR EN ASCII Y DESCIFRAR EN ASCII
+  
+  system("pause");    
 
 
 }
